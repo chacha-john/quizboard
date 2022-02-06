@@ -16,7 +16,11 @@
 
 correctAnswer = {
     question1: "A",
-    
+    question2: "B",
+    question3: "A",
+    question4: "C",
+    question5: "B",
+    question6: "D"
 }
 
 let userForm = document.getElementById("quizboard");
