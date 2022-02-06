@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R!ko JS</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
     <nav>
@@ -14,58 +14,57 @@
     <main>
         <header>Quiz Board</header>
         <div class="questions">
-            <form>
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-
-                <label for="question-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, assumenda?</label><br>
-                <input type="radio" name="questions" id="question-1">A. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">B. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">C. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
-                <input type="radio" name="questions" id="question-1">D. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, repudiandae. <br>
+            <form name="qboard" id="quizboard">
+                <div class="qn1">
+                    1. What is the second name of your favorite aunt?
+                    <p><input type="radio" name="question1" value="A">A. Marie</p>
+                    <p><input type="radio" name="question1" value="B">B. Angie</p>
+                    <p><input type="radio" name="question1" value="C">C. Lexy</p>
+                    <p><input type="radio" name="question1" value="D">D. Alexa</p>
+                </div>
+                <div class="qn2">
+                    2. What is the second name of your favorite uncle?
+                    <p><input type="radio" name="question2" value="">A. Marie</p>
+                    <p><input type="radio" name="question2" value="">B. Angie</p>
+                    <p><input type="radio" name="question2" value="">C. Lexy</p>
+                    <p><input type="radio" name="question2" value="">D. Alexa</p>
+                </div>
+                <div class="qn3">
+                    3. What is the second name of your favorite neighbor?
+                    <p><input type="radio" name="question3" value="">A. Marie</p>
+                    <p><input type="radio" name="question3" value="">B. Angie</p>
+                    <p><input type="radio" name="question3" value="">C. Lexy</p>
+                    <p><input type="radio" name="question3" value="">D. Alexa</p>
+                </div>
+                <div class="qn4">
+                    4. What is the name of your favorite city?
+                    <p><input type="radio" name="question4" value="">A. Marie</p>
+                    <p><input type="radio" name="question4" value="">B. Angie</p>
+                    <p><input type="radio" name="question4" value="">C. Lexy</p>
+                    <p><input type="radio" name="question4" value="">D. Alexa</p>
+                </div>
+                <div class="qn5">
+                    5. What is the second name of your favorite aunt?
+                    <p><input type="radio" name="question5" value="">A. Marie</p>
+                    <p><input type="radio" name="question5" value="">B. Angie</p>
+                    <p><input type="radio" name="question5" value="">C. Lexy</p>
+                    <p><input type="radio" name="question5" value="">D. Alexa</p>
+                </div>
+                <div class="qn6">
+                    6. What is the second name of your favorite aunt?
+                    <p><input type="radio" name="question6" value="">A. Marie</p>
+                    <p><input type="radio" name="question6" value="">B. Angie</p>
+                    <p><input type="radio" name="question6" value="">C. Lexy</p>
+                    <p><input type="radio" name="question6" value="">D. Alexa</p>
+                </div>
+                <input type="button" onclick="saveAnswers()" value="Save and Submit" id="submit-1">
             </form>
+        </div>
+        <div id="feedback">
+
         </div>
     </main>
     
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
