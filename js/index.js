@@ -7,7 +7,7 @@ let correctAnswer = {
     question5: "B"
 };
 
-let userForm = document.getElementById("quizboard");
+let userForm = document.querySelector("#quizboard");
 userForm.addEventListener('submit', ()=> {
     let userData = new FormData(userForm);
     dataLogic(userData);
@@ -24,7 +24,6 @@ dataLogic = (userData) => {
 
     if (answer1 === correctAnswer['question1']){
         marks = marks += 20;
-        alert('success')
     }
     if ( answer2 === correctAnswer['question2']){
         marks +=20;
@@ -38,6 +37,10 @@ dataLogic = (userData) => {
     if ( answer5 === correctAnswer['question5']){
         marks +=20;
     }
-    
-    alert(marks);
+
+    //output display set to a class on the document
+
+    let userPerformance = (document.querySelector('#feedback').textContent = marks);
+    document.style.get()
+
 }
