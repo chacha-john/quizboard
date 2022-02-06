@@ -8,11 +8,10 @@ let correctAnswer = {
 };
 
 let userForm = document.querySelector("#quizboard");
-userForm.addEventListener('submit', ()=> {
+userForm.addEventListener('submit', (e)=> {
+    e.preventDefault()
     let userData = new FormData(userForm);
     dataLogic(userData);
-    
-
 })
 
 dataLogic = (userData) => {
