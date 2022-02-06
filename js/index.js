@@ -38,9 +38,21 @@ dataLogic = (userData) => {
         marks +=20;
     }
 
+    if(marks > 60){
+        var remarks = 'Congratulations! You scored ' + marks + " marks! You did an excellent job!"
+    }
+    else if(marks == 60){
+        var remarks = 'Congratulations! You scored ' + marks + " marks! You did a fairly outstanding job!"
+    }
+    else{
+        var remarks = 'You scored ' + marks + " marks! It looks like you missed some concepts. Please revisit the course materials then retake the quiz."
+    }
+
     //output display set to a class on the document
 
-    let userPerformance = (document.querySelector('#feedback').textContent = marks);
-    document.style.get()
+    let userPerformance = document.querySelector('#feedback');
+    userPerformance.textContent = remarks;
+    userForm.style.display = 'none';
+
 
 }
