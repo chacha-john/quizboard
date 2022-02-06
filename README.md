@@ -6,7 +6,7 @@ A website for a school to take a JavaScript test.
 # Table of Content
 
 + [Description](#description)
-+ [Link to design] (#design)
++ [Link to design](#design)
 + [Requirements](#Requirements)
 + [Technology Used](#technology-used)
 + [Licence](#licence)
