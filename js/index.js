@@ -1,35 +1,43 @@
-// function saveAnswers(){
-//     // alert('ala!')
-//     var count = 0;
-//     var answer1 = document.qboard.question1.value;
-//     var answer2 = document.qboard.question2.value;
-//     var answer3 = document.qboard.question3.value;
-//     var answer4 = document.qboard.question4.value;
-//     var answer5 = document.qboard.question5.value;
-//     var answer6 = document.qboard.question6.value;
-//     if(answer1 =="A"){
-//         count += 10
-//         document.write(count)
-//         }
-// }
-
-
-correctAnswer = {
+let marks = 0;
+let correctAnswer = {
     question1: "A",
     question2: "B",
-    question3: "A",
+    question3: "D",
     question4: "C",
-    question5: "B",
-    question6: "D"
-}
+    question5: "B"
+};
 
 let userForm = document.getElementById("quizboard");
 userForm.addEventListener('submit', ()=> {
     let userData = new FormData(userForm);
-    let secondName = userData.get("question1")
-
-    if (secondName === correctAnswer["question1"]){
-        alert("ala!");
-    }
+    dataLogic(userData);
+    
 
 })
+
+dataLogic = (userData) => {
+    let answer1 = userData.get('question1');
+    let answer2 = userData.get('question2');
+    let answer3 = userData.get('question3');
+    let answer4 = userData.get('question4');
+    let answer5 = userData.get('question5');
+
+    if (answer1 === correctAnswer['question1']){
+        marks = marks += 20;
+        alert('success')
+    }
+    if ( answer2 === correctAnswer['question2']){
+        marks +=20;
+    }
+    if ( answer3 === correctAnswer['question3']){
+        marks +=20;
+    }
+    if ( answer4 === correctAnswer['question4']){
+        marks +=20;
+    }
+    if ( answer5 === correctAnswer['question5']){
+        marks +=20;
+    }
+    
+    alert(marks);
+}
