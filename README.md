@@ -1,4 +1,4 @@
-# quizboard
+# QuizBoard
 A website for a school to take a JavaScript test.
 
 ## By Chacha John 
@@ -16,7 +16,7 @@ A website for a school to take a JavaScript test.
 <p>The site helps students take a JavaScript exam for the javascript course. The page allows them to select one answer for every question asked and grades them according to performance</p>
 <p>After taking the test, every student gets a response displayed showing how they performed and whether or not they are supposed to retake the test</p>
 
-# design
+# Design
 https://www.figma.com/file/L9oTiDsQ6doXvs1wvv1KOf/quizboard?node-id=6%3A2
 
 # Requirements
